@@ -18,7 +18,7 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function ERIKC{	
+function ERIKC(){	
 	//alert("led off");
 	console.log("ERIKC");
 	message = new Paho.MQTT.Message("HOLA SOY ERIKC");
