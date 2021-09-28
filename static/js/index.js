@@ -18,7 +18,14 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-
+function ERIKC{	
+	//alert("led off");
+	console.log("ERIKC");
+	message = new Paho.MQTT.Message("HOLA SOY ERIKC");
+    	message.destinationName = "erikccushpa10@gmail.com/tema1";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
 
 
 
@@ -72,5 +79,6 @@ function LED1_Off(){
 	  //document.getElementById("sensor").innerHTML="LISTO";
 	  document.getElementById("sensor").innerHTML=message.payloadString;
 	  document.getElementById("sensor1").innerHTML=message.payloadString;
+	  document.getElementById("FIN_E").innerHTML=message.payloadString;
   }
   
